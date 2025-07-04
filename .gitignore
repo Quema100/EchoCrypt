@@ -1,0 +1,11 @@
+# folder
+.venv
+test_files
+modules/__pycache__
+node_modules
+
+# ransomware key & log
+private_key.pem
+public_key.pem
+echocrypt.log
+

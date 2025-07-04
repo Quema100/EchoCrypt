@@ -1,0 +1,24 @@
+{
+  "name": "echocrypt",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Quema100/EchoCrypt#readme",
+  "bugs": {
+    "url": "https://github.com/Quema100/EchoCrypt/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quema100/EchoCrypt.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
