@@ -93,7 +93,7 @@ Open a **separate terminal window** and run:
 npm start
 ```
 The server will start at **http://127.0.0.1:3000/password**.   
-It will log received keys and save them in the stolen_keys/ directory. Keep this terminal open during the encryption phase.
+It will log received keys and save them in the `stolen_keys/` directory. Keep this terminal open during the encryption phase.
 
 ### 2. Setup Test Environment
 HIGHLY RECOMMENDED to create a dedicated directory with dummy files for safe testing.
