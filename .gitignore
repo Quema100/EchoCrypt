@@ -10,3 +10,5 @@ private_key.pem
 public_key.pem
 echocrypt.log
 
+# json
+package-lock.json
