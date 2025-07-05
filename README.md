@@ -69,7 +69,7 @@ EchoCrypt/
 
 1.  **Clone the repository:** (If this is from a GitHub repo)
     ```bash
-    git clone [https://github.com/Quema100/EchoCrypt.git](https://github.com/Quema100/EchoCrypt.git)
+    git clone https://github.com/Quema100/EchoCrypt.git
     cd echocrypt
     ```
     (If you received the files directly, just navigate to the project directory.)
