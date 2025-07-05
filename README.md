@@ -25,7 +25,6 @@ It aims to demonstrate the fundamental principles and mechanisms of file encrypt
     * [5. Clean Up Test Environment](#5-clean-up-test-environment)
 * [Technical Details](#technical-details)
 * [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
 
 ## Introduction
