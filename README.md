@@ -143,7 +143,7 @@ To remove all generated files and directories (including encrypted/decrypted fil
 ```bash
 python test.py --cleanup-test-env --target-dir my_test_data
 ```
-This will remove the my_test_data/ directory entirely.
+This will remove the `my_test_data/` directory entirely.
 
 ## Technical Details
 * Key Derivation: PBKDF2-HMAC (SHA256) is used to derive an AES key from a password and salt.
