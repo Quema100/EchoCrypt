@@ -4,11 +4,11 @@ This project, **EchoCrypt**, is a **ransomware simulation** designed for **educa
 It aims to demonstrate the fundamental principles and mechanisms of file encryption, key exfiltration to a simulated server, and the decryption process as seen in real-world ransomware attacks.  
 
 > [!WARNING]    
-> **DO NOT use this code on any system containing important data.**  
-> **DO NOT distribute or use this code for any malicious or illegal activities.**  
-> **ALWAYS run this code in a highly isolated and controlled environment, such as a dedicated virtual machine (VM) with no network access to your primary systems.**  
-> This simulation modifies files on your system. Using the `--setup-test-env` option and a dedicated `--target-dir` is **STRONGLY RECOMMENDED** to prevent accidental damage.  
-> **The developer is not responsible for any misuse of this software or any damage caused thereby.**  
+> * **DO NOT use this code on any system containing important data.**  
+> * **DO NOT distribute or use this code for any malicious or illegal activities.**  
+> * **ALWAYS run this code in a highly isolated and controlled environment, such as a dedicated virtual machine (VM) with no network access to your primary systems.**  
+> * This simulation modifies files on your system. Using the `--setup-test-env` option and a dedicated `--target-dir` is **STRONGLY RECOMMENDED** to prevent accidental damage.  
+> * **The developer is not responsible for any misuse of this software or any damage caused thereby.**  
 
 ## Table of Contents
 
