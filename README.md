@@ -156,7 +156,7 @@ This will remove the `my_test_data/` directory entirely.
 *  Threading: A separate thread handles the exfiltration to avoid blocking the main encryption process.
 
 ## Contributing
-Feel free to fork this repository, open issues, and submit pull requests. Suggestions for improving realism, security education, or code quality are welcome.
+Feel free to fork this repository, open issues, and submit pull requests. Suggestions for improving realism, or code quality are welcome.
 
 ## Contact
 For questions or discussions related to this simulation, please open an issue in the GitHub repository.
