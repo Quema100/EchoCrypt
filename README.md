@@ -25,6 +25,7 @@ It aims to demonstrate the fundamental principles and mechanisms of file encrypt
     * [5. Clean Up Test Environment](#5-clean-up-test-environment)
 * [Technical Details](#technical-details)
 * [Contributing](#contributing)
+* [LICENSE](#license)
 * [Contact](#contact)
 
 ## Introduction
@@ -157,6 +158,10 @@ This will remove the `my_test_data/` directory entirely.
 
 ## Contributing
 Feel free to fork this repository, open issues, and submit pull requests. Suggestions for improving realism, or code quality are welcome.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For questions or discussions related to this simulation, please open an issue in the GitHub repository.
