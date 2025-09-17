@@ -1,2 +1,8 @@
 cryptography>=45.0.5
 requests>=2.32.4
+# Python server library
+# The following libraries are required if you use a Python server.
+Flask>=3.1.2
+gunicorn>=23.0.0
+gevent>=25.8.2
+waitress>=3.0.2
