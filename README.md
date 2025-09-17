@@ -79,6 +79,11 @@ EchoCrypt/
     pip install cryptography requests 
     npm i express
     ```
+    > [!NOTE]
+    > If you plan to use a Python server, please add the following libraries.  
+    > ```bash
+    > pip install Flask gunicorn gevent waitress
+    > ```  
 
 ## Usage
 
@@ -94,6 +99,24 @@ npm start
 ```
 The server will start at **http://127.0.0.1:3000/password**.   
 It will log received keys and save them in the `stolen_keys/` directory. Keep this terminal open during the encryption phase.
+
+> [!NOTE]
+> If you want to use a Python server, please follow these steps:   
+> ```bash
+> python server.py
+> ```
+
+> [!TIP]
+> If you want to use a WSGI server, please follow these steps:  
+> ```bash
+> gunicorn -w 4 -k gevent -b 0.0.0.0:3000 server:app 
+> ```
+
+> [!IMPORTANT] 
+> If Gunicorn does not run on Windows, please follow these steps:
+> ```bash
+> waitress-serve --host 0.0.0.0 --port 3000 server:app
+> ```
 
 ### 2. Setup Test Environment
 HIGHLY RECOMMENDED to create a dedicated directory with dummy files for safe testing.
