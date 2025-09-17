@@ -84,10 +84,6 @@ def save_password():
 
 # --- Server Startup ---
 if __name__ == '__main__':
-    # Create the directory if it doesn't exist
-    os.makedirs(KEYS_DIR, exist_ok=True)
-    print(f"Directory '{KEYS_DIR}' is ready.")
-
     print(f"Server is running on http://0.0.0.0:{PORT}")
     print(f"Private keys and related information are stored in the '{KEYS_DIR}' directory.")
     print(f"(For external access, you may need to open port {PORT} in your firewall)")
