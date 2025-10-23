@@ -30,7 +30,7 @@ It aims to demonstrate the fundamental principles and mechanisms of file encrypt
 
 ## Introduction
 
-EchoCrypt is a Python-based project that simulates the behavior of a typical ransomware attack. It demonstrates key stages: generating cryptographic keys, encrypting target files, exfiltrating the private key to a Command & Control server, generating a ransom note, and providing a decryption utility. This tool is designed to help understand ransomware mechanisms.
+EchoCrypt is a Python-based project that simulates the behavior of a typical ransomware attack. It demonstrates key stages: generating cryptographic keys, encrypting target files, exfiltrating the private key to a data‑collection (exfiltration) server, generating a ransom note, and providing a decryption utility. This tool is designed to help understand ransomware mechanisms.
 
 ## Features
 
